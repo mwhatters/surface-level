@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin score-text {
+  color: green;
+  text-shadow: 0.3rem 0.3rem yellow;
+}
+
+@mixin title-text {
+  color: #22adfc;
+  text-shadow: 0.2rem 0.2rem #fff1e8;
+}
+
+@mixin building-outline {
+  border-left: $building-outline-thickness $building-outline-color solid;
+  border-right: $building-outline-thickness $building-outline-color solid;
+  border-top: $building-outline-thickness $building-outline-color solid;
+}
+
+@mixin b-base {
+  background-color: $building-base-color;
+}

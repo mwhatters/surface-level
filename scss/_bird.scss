@@ -1,0 +1,39 @@
+.bird-wrapper {
+  position: relative;
+}
+
+.bird {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  animation: fly-horizontal 10s, bird-sprite 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+@keyframes fly-horizontal {
+  from { 
+    transform: translateX(-10vw);
+  }
+
+  to {
+    transform: translateX(110vw);
+  }
+}
+
+@keyframes bird-sprite {
+  from {
+    background: url("/images/bird1.png");
+    image-rendering: crisp-edges;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  to {
+    background: url("/images/bird2.png");
+    image-rendering: crisp-edges;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
